@@ -15,7 +15,8 @@ class MainMenu(tk.Frame):
 	title_size = 20
 	text_size = 15
 
-	default_PATH = os.getenv('USERPROFILE')+'/Videos'
+	# default_PATH = os.getenv('USERPROFILE')+'/Videos'  #windows
+	default_PATH = os.getenv('HOME')+'/Videos' #linux
 	default_input_PATH = None
 	default_start_time = '00:00:00'
 	default_stop_time = '00:00:01'
